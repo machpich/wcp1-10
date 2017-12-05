@@ -9,11 +9,6 @@
 	margin: 0 auto;
 }
 
-.container-sml{
-	max-width: 800px;
-	margin: 0 auto;
-}
-
 .clearfix::after{
 	content: "";
 	display: block;
@@ -201,7 +196,7 @@ header{
 	font-size: 20px;
 }
 
-.profile-text p{
+.profile-text-style{
 	padding-bottom: 8px;
 	font-size: 16px;
 }
@@ -228,6 +223,10 @@ header{
 	float: left;
 	text-align: center;
 }
+.contact-centering-box{
+	text-align: left;
+	display: inline-block;
+}
 
 .contact-box h3{
 	font-size: 20px;
@@ -247,7 +246,7 @@ header{
 
 .fa-large{
 	font-size: 50px;
-	padding: 0 10px;
+	padding-right: 20px;
 }
 
 /*footer-------------------------------------*/
@@ -260,4 +259,92 @@ footer{
 	font-size: 16px;
 	line-height: 60px;
 	text-align: center;
+}
+
+/*mediaqueries===================================*/
+@media screen and (max-width: 768px){
+	.container{
+		width: 90%;
+	}
+
+	header{
+		height: 50px;
+	}
+	.header-logo{
+		height: 50px;
+	}
+	.nav-list{
+		display: none;
+	}
+	.fa-bars{
+		font-size: 32px;
+		width: 44px;
+		height: 44px;
+		border: 1px solid #FFF;
+		color: #fff;
+	}
+
+	.main-visual-image {
+	    height: 750px;
+	    background-image: url(img/code.png);
+	}
+	.main-visual-text-sub{
+		font-size: 40px;
+	}
+	.main-visual-text-txt {
+		font-size: 18px;
+	}
+
+	.portfolio-image:nth-child(3n+2){
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.portfolio-image:nth-child(1),.portfolio-image:nth-child(3),.portfolio-image:nth-child(5){
+		display: none;
+	}
+	.portfolio-image{
+		float: none;
+		margin: 0 auto;
+	}
+	.feature-item{
+		float: none;
+		width: 320px;
+		padding-right: 0;
+		padding-bottom: 10px;
+		margin: 0 auto;
+	}
+	.feature-item:nth-child(3) {
+	    padding-bottom: 0px;
+	}
+	.profile-box{
+		padding-top: 30px;
+	}
+	.profile-image-space{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.profile-text{
+		padding-top: 20px;
+		text-align: center;
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	.profile-text-1stline{
+		padding-bottom: 20px;
+	}
+	.contact-box{
+		width: auto;
+	}
+	.contact-info{
+		width: auto;
+		float: none;
+	}
+	.contact-centering-box{
+		text-align: center;
+	}
+	.fa-large{
+		padding: 0 4px;
+	}
 }

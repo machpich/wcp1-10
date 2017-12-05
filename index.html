@@ -3,12 +3,13 @@
 <head>
 	<title>MySite</title>
 	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width-device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<div class="normal-container">
+		<div class="normal-container container">
 			<img src="img/logo.png" class="header-logo">
 			<nav>
 				<ul class="nav-list">
@@ -17,6 +18,7 @@
 					<li class="nav-list-item">Profile</li>
 					<li class="nav-list-item">Contact</li>
 				</ul>
+				<span class="nav-list-for-device fa fa-bars"></span>
 			</nav>
 		</div>
 	</header>
@@ -33,7 +35,7 @@
 	<!-- /main-visual -->
 
 	<main class="portfolio clearfix">
-		<section class="portfolio-container">
+		<section class="portfolio-container container">
 			<h2 class="section-title">Portfolio</h2>
 			<hr>
 			<p class="section-text">It is a long established fact a reader will be distracted by the readable<br>
@@ -54,7 +56,7 @@
 	<!-- /main-portfolio -->
 
 	<section class="feature">
-		<div class="feature-container">
+		<div class="feature-container container">
 			<h2 class="section-title">Feature</h2>
 			<hr>
 			<p class="section-text">It is a long established fact a reader will be distracted by the readable<br>
@@ -82,7 +84,7 @@
 	<!-- /feature -->
 
 	<section class="profile">
-		<div class="normal-container">
+		<div class="normal-container container">
 			<h2 class="section-title">Profile</h2>
 			<hr>
 			<p class="section-text">It is a long established fact a reader will be distracted by the readable<br>
@@ -95,16 +97,16 @@
 			</div>
 			<div class="profile-text">
 				<h3>MyName</h3>
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text.It has roots In a piece of classical Latin literature from 45 BC. making it over 2000 years old.Richard McClintock a Latin professor at Hampden-Sydeny Collage in Virginia.looked up one of the more obscure Latin words.consectetur.</p>
+				<p class="profile-text-style profile-text-1stline">Contrary to popular belief, Lorem Ipsum is not simply random text.It has roots In a piece of classical Latin literature from 45 BC. making it over 2000 years old.Richard McClintock a Latin professor at Hampden-Sydeny Collage in Virginia.looked up one of the more obscure Latin words.consectetur.</p>
 				<h3>MySkills</h3>
-				<p>HTML/CSS/JavaScript/JQuerry/PhotoShop</p>
+				<p class="profile-text-style">HTML/CSS/JavaScript/JQuerry/PhotoShop</p>
 			</div>
 		</div>
 	</section>
 	<!-- /profile -->
 
 	<section class="contact">
-		<div class="contact-container">
+		<div class="contact-container container">
 			<h2 class="section-title">Contact</h2>
 			<hr>
 			<p class="section-text">It is a long established fact a reader will be distracted by the readable<br>
@@ -113,16 +115,20 @@
 		</div>
 		<div class="contact-box clearfix">
 			<div class="contact-info">
-				<h3>Mail</h3>
-				<p>xx@xxx.com</p>
-				<h3>Tel</h3>
-				<p>000-0000-0000</p>
+				<div class="contact-centering-box">
+					<h3>Mail</h3>
+					<p>xx@xxx.com</p>
+					<h3>Tel</h3>
+					<p>000-0000-0000</p>
+				</div>
 			</div>
 			<div class="contact-social">
-				<h3>SNS</h3>
-				<i class="fa fa-twitter fa-large"></i>
-				<i class="fa fa-facebook fa-large"></i>
-				<i class="fa fa-instagram fa-large"></i>
+				<div class="contact-centering-box">
+					<h3>SNS</h3>
+					<i class="fa fa-twitter fa-large"></i>
+					<i class="fa fa-facebook fa-large"></i>
+					<i class="fa fa-instagram fa-large"></i>
+				</div>
 			</div>
 		</div>
 	</section>
