@@ -53,6 +53,7 @@ header{
 	display: inline-block;
 	line-height: 70px;
 	padding-right: 30px;
+	padding-left: 30px;
 	font-size: 16px;
 	color: #FAFAFA;
 
@@ -169,6 +170,11 @@ header{
 	background-color: #ECEFF1;
 }
 
+.profile-box{
+	width: 1024px;
+	margin: 0 auto;
+}
+
 .profile .section-text{
 	padding-bottom: 0;
 }
@@ -197,8 +203,11 @@ header{
 }
 
 .profile-text-style{
-	padding-bottom: 8px;
 	font-size: 16px;
+}
+
+.profile-text-style:nth-of-type(1){
+	padding-bottom: 8px;
 }
 
 /*contact-----------------------------------*/
@@ -235,6 +244,9 @@ header{
 
 .contact-box p{
 	text-decoration: underline;
+}
+
+.contact-box p:nth-of-type(1){
 	padding-bottom: 20px;
 }
 
@@ -349,6 +361,7 @@ footer{
 	}
 	.profile-box{
 		padding-top: 30px;
+		width: auto;
 	}
 	.profile-image-space{
 		float: none;
